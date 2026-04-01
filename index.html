@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRẮC NGHIỆM XÉT NGHIỆM ĐÁNH GIÁ TÌNH TRẠNG VIÊM - TEAMDRCAT</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+  }
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+body{font-family:'Inter',sans-serif;}
+.custom-scrollbar::-webkit-scrollbar{width:6px;}
+.custom-scrollbar::-webkit-scrollbar-track{background:#f1f1f1;}
+.custom-scrollbar::-webkit-scrollbar-thumb{background:#14b8a6;border-radius:10px;} /* teal-500 */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover{background:#0d9488;} /* teal-600 */
+.option-transition{transition:all 0.2s cubic-bezier(0.4,0,0.2,1);}
+html{scroll-behavior:smooth;}
+</style>
+</head>
+<body class="bg-teal-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
+<div id="root"></div>
+
+<script type="text/template" id="quizData">
+TRẮC NGHIỆM HÓA SINH LÂM SÀNG
+XÉT NGHIỆM ĐÁNH GIÁ TÌNH TRẠNG VIÊM Y HÀ NỘI
+SOẠN BY DRCAT
+( Tài liệu được biên soạn dựa trên kiến thức chuẩn Y Hà Nội )
+Bảng Tóm tắt Các Protein Phản ứng Pha Cấp (APR) Quan trọng trên Lâm sàng
+
+Protein,Loại Phản ứng,Chức năng Chính,Thời gian bán hủy,Động học Phản ứng,Ghi chú Lâm sàng Chính
+Protein phản ứng C (CRP),Dương tính,"Gắn và loại bỏ mảnh vỡ tế bào, hoạt hóa bổ thể",~19 giờ,"Tăng nhanh sau 6-12 giờ, đỉnh sau 48 giờ",Marker nhạy để theo dõi diễn tiến cấp của viêm và đáp ứng điều trị.
+Alpha-1-antitrypsin (AAT),Dương tính,Ức chế protease (đặc biệt là elastase của bạch cầu),4 ngày,"Tăng sau 24 giờ, đỉnh sau 3-4 ngày",Bảo vệ phổi. Thiếu hụt di truyền gây khí phế thũng sớm.
+Alpha-1-acid glycoprotein (AAG),Dương tính,"Gắn và vận chuyển thuốc, hormon; điều hòa miễn dịch",3 ngày,"Tăng sau 24 giờ, đỉnh sau 3-5 ngày",Tăng trong viêm và do corticosteroid. Thường xét nghiệm cùng Haptoglobin.
+Haptoglobin (Hp),Dương tính,"Gắn hemoglobin tự do, bảo vệ thận, giữ sắt",~5 ngày,"Tăng sau 24 giờ, đỉnh sau 4-6 ngày",Giảm mạnh trong tan huyết nội mạch.
+Ceruloplasmin (Cp),Dương tính,"Vận chuyển đồng, hoạt tính ferroxidase (oxy hóa Fe2+)",4-5 ngày,Tăng chậm trong đáp ứng pha cấp,Giảm trong bệnh Wilson. Tăng trong thai kỳ hoặc dùng estrogen.
+"Bổ thể C3, C4",Dương tính,Thành phần của hệ thống miễn dịch bẩm sinh,Thay đổi,"Tăng trong viêm, nhưng bị tiêu thụ trong bệnh tự miễn",Nồng độ là kết quả của tổng hợp (tăng) và tiêu thụ (giảm).
+Albumin,Âm tính,"Duy trì áp lực keo, vận chuyển nhiều chất",15-19 ngày,Giảm chậm trong vòng vài ngày đến vài tuần,"Thời gian bán hủy dài, phản ánh tình trạng viêm và dinh dưỡng mạn tính."
+Transthyretin (TTR/Prealbumin),Âm tính,Vận chuyển hormon giáp và protein gắn retinol (RBP),2 ngày,Giảm nhanh trong 24-48 giờ,"Thời gian bán hủy ngắn, marker nhạy cho stress viêm cấp và tình trạng dinh dưỡng cấp."
+Transferrin (Tf),Âm tính,Vận chuyển sắt (Fe3+),7 ngày,Giảm trong viêm,Tăng trong thiếu sắt. Giảm trong bệnh mạn tính (thiếu máu do viêm).
+
+Phần I: Các khái niệm cơ bản về Đáp ứng Pha cấp 
+Câu 1: Đáp ứng pha cấp được định nghĩa là một phản ứng không đặc hiệu của cơ thể đối với tình trạng nào sau đây?
+A. Chỉ nhiễm khuẩn do vi khuẩn Gram âm
+B. Chỉ các bệnh lý tự miễn
+C. Viêm, nhiễm khuẩn, hoặc tổn thương mô
+D. Chỉ tình trạng stress tâm lý nặng
+Đáp án: C
+
+Câu 2: Cơ quan nào chịu trách nhiệm chính cho việc tổng hợp hầu hết các protein phản ứng pha cấp?
+A. Tủy xương
+B. Lách
+C. Thận
+D. Gan
+Đáp án: D
+
+Câu 3: Yếu tố nào đóng vai trò là tín hiệu chính kích thích gan thay đổi việc tổng hợp protein trong đáp ứng pha cấp?
+A. Nồng độ oxy trong máu giảm
+B. Các cytokine được giải phóng từ vị trí tổn thương
+C. Sự thay đổi pH máu
+D. Các hormon steroid từ tuyến thượng thận
+Đáp án: B
+
+Câu 4: Trong đáp ứng pha cấp, sự thay đổi nồng độ các protein huyết thanh phản ánh điều gì về mặt sinh lý?
+A. Sự suy giảm chức năng gan cấp tính
+B. Sự mất cân bằng dinh dưỡng đột ngột
+C. Sự ưu tiên của cơ thể trong việc tổng hợp protein phòng vệ so với protein vận chuyển và dinh dưỡng
+D. Sự tăng tính thấm của mao mạch một cách toàn diện
+Đáp án: C
+
+Câu 5: Thuật ngữ "protein phản ứng pha cấp âm tính" (negative acute-phase reactant) có nghĩa là gì?
+A. Protein có điện tích âm ở pH sinh lý
+B. Protein có nồng độ giảm trong quá trình viêm
+C. Protein ức chế phản ứng viêm
+D. Protein không được tổng hợp ở gan
+Đáp án: B
+
+Câu 6: Protein nào sau đây KHÔNG phải là một protein phản ứng pha cấp dương tính?
+A. Protein phản ứng C (CRP)
+B. Haptoglobin (Hp)
+C. Transferrin (Tf)
+D. Ceruloplasmin (Cp)
+Đáp án: C
+
+Câu 7: Tại sao việc đo lường các protein phản ứng pha cấp lại hữu ích trên lâm sàng?
+A. Để chẩn đoán xác định nguyên nhân gây bệnh
+B. Để phát hiện và theo dõi mức độ của một quá trình viêm hoặc tổn thương mô
+C. Để đánh giá chức năng của tất cả các cơ quan nội tạng
+D. Để tiên lượng chính xác khả năng sống còn của bệnh nhân trong mọi trường hợp
+Đáp án: B
+
+Câu 8: Một bệnh nhân bị viêm cấp nặng. Sự thay đổi nào sau đây được dự kiến sẽ xảy ra nhanh nhất?
+A. Nồng độ Albumin giảm
+B. Nồng độ CRP tăng
+C. Nồng độ IgG tăng
+D. Nồng độ Transferrin tăng
+Đáp án: B
+
+Câu 9: Tất cả các protein sau đây đều được tổng hợp tại gan NGOẠI TRỪ:
+A. Albumin
+B. Immunoglobulin G (IgG)
+C. Fibrinogen
+D. Transthyretin (TTR)
+Đáp án: B
+
+Câu 10: Sự khác biệt cơ bản giữa đáp ứng pha cấp và đáp ứng miễn dịch đặc hiệu (sản xuất kháng thể) là gì?
+A. Đáp ứng pha cấp chậm hơn đáp ứng miễn dịch đặc hiệu
+B. Đáp ứng pha cấp có tính đặc hiệu cho kháng nguyên, trong khi đáp ứng miễn dịch thì không
+C. Đáp ứng pha cấp là một phản ứng nhanh và không đặc hiệu, trong khi đáp ứng miễn dịch đặc hiệu cần thời gian và có trí nhớ miễn dịch
+D. Đáp ứng pha cấp chỉ xảy ra với nhiễm virus, còn đáp ứng miễn dịch đặc hiệu xảy ra với nhiễm khuẩn
+Đáp án: C
+
+Phần II: Các Protein Phản ứng Pha cấp Dương tính (APR+) trong Thực hành Lâm sàng 
+A. Protein Phản ứng C (CRP)
+
+Câu 11: Bệnh nhân nam 65 tuổi nhập viện vì sốt cao, ho có đờm mủ. Chẩn đoán viêm phổi do vi khuẩn. Xét nghiệm nào sau đây được kỳ vọng sẽ tăng cao nhất và nhanh nhất để phản ánh tình trạng nhiễm khuẩn cấp này?
+A. Albumin
+B. Tốc độ máu lắng (ESR)
+C. Protein phản ứng C (CRP)
+D. Số lượng tế bào lympho
+Đáp án: C
+
+Câu 12: Chức năng sinh học chính của CRP trong đáp ứng viêm là gì?
+A. Vận chuyển sắt đến tủy xương
+B. Ức chế hoạt động của protease
+C. Gắn vào các thành phần của tế bào bị phá hủy và vi sinh vật, sau đó hoạt hóa bổ thể
+D. Duy trì áp lực keo của huyết tương
+Đáp án: C
+
+Câu 13: Một bệnh nhân được điều trị viêm tụy cấp. Bác sĩ chỉ định xét nghiệm CRP hàng ngày. Mục đích chính của việc này là gì?
+A. Để chẩn đoán xác định bệnh Wilson
+B. Để đánh giá tình trạng dinh dưỡng của bệnh nhân
+C. Để theo dõi diễn biến của quá trình viêm và đánh giá đáp ứng với điều trị
+D. Để sàng lọc ung thư tuyến tụy
+Đáp án: C
+
+Câu 14: Trong một nghiên cứu so sánh, nhóm bệnh nhân nhiễm khuẩn huyết có nồng độ CRP trung bình cao hơn đáng kể so với nhóm bệnh nhân nhiễm virus cúm. Điều này phù hợp với nhận định nào sau đây?
+A. CRP chỉ tăng trong nhiễm khuẩn
+B. Nhiễm khuẩn thường gây ra đáp ứng viêm hệ thống mạnh mẽ hơn và do đó làm CRP tăng cao hơn so với nhiễm virus
+C. Virus cúm có khả năng ức chế gan sản xuất CRP
+D. Xét nghiệm CRP không có giá trị trong các bệnh do virus
+Đáp án: B
+
+Câu 15: Một trẻ sơ sinh 3 ngày tuổi có biểu hiện li bì, bỏ bú, thân nhiệt không ổn định. Xét nghiệm CRP máu cuống rốn lúc sinh là 20 μg/dL. Xét nghiệm CRP hiện tại là 25 mg/dL. Sự thay đổi này gợi ý điều gì nhất?
+A. Đây là sự thay đổi sinh lý bình thường ở trẻ sơ sinh
+B. Trẻ có khả năng bị bệnh gan bẩm sinh
+C. Trẻ có khả năng bị nhiễm khuẩn sơ sinh
+D. Trẻ bị mất nước nặng
+Đáp án: C
+
+Câu 16: Nồng độ CRP có thể tăng tới bao nhiêu lần so với giá trị bình thường trong các trường hợp viêm nặng?
+A. 2 lần
+B. 10 lần
+C. 100 lần
+D. Lên đến 2000 lần
+Đáp án: D
+
+Câu 17: Kỹ thuật nào thường được sử dụng để định lượng CRP trong phòng xét nghiệm hiện đại?
+A. Sắc ký lớp mỏng (TLC)
+B. Điện di protein huyết thanh
+C. Miễn dịch đo độ đục (Immunoturbidimetry) hoặc miễn dịch đo độ tán xạ (Immunonephelometry)
+D. Kính hiển vi điện tử
+Đáp án: C
+
+Câu 18: CRP được cấu tạo bởi bao nhiêu chuỗi polypeptide giống hệt nhau?
+A. 1
+B. 2
+C. 4
+D. 5
+Đáp án: D
+
+Câu 19: Tình huống nào sau đây ÍT có khả năng gây tăng CRP nhất?
+A. Phẫu thuật thay khớp háng
+B. Viêm ruột thừa cấp
+C. Đợt cấp của bệnh Lupus ban đỏ hệ thống
+D. Bệnh rối loạn lo âu lan tỏa
+Đáp án: D
+
+Câu 20: Sau khi tác nhân gây viêm được loại bỏ hoàn toàn, nồng độ CRP sẽ:
+A. Giảm về bình thường rất nhanh chóng do thời gian bán hủy ngắn
+B. Duy trì ở mức cao trong nhiều tuần
+C. Giảm từ từ trong khoảng 1 tháng
+D. Chuyển thành một protein khác
+Đáp án: A
+
+B. Alpha-1-Antitrypsin (AAT) 
+
+Câu 21: Chức năng quan trọng nhất của Alpha-1-antitrypsin (AAT) là gì?
+A. Vận chuyển đồng trong huyết thanh
+B. Ức chế elastase của bạch cầu trung tính, bảo vệ mô liên kết của phổi
+C. Gắn với hemoglobin tự do để ngăn ngừa tổn thương thận
+D. Hoạt hóa hệ thống bổ thể
+Đáp án: B
+
+Câu 22: Một bệnh nhân nam 35 tuổi, không hút thuốc, được chẩn đoán khí phế thũng. Bệnh lý di truyền nào có khả năng cao nhất là nguyên nhân?
+A. Thiếu hụt Haptoglobin
+B. Bệnh Wilson
+C. Thiếu hụt Alpha-1-antitrypsin
+D. Tăng cholesterol máu gia đình
+Đáp án: C
+
+Câu 23: Trong đáp ứng pha cấp, nồng độ AAT thay đổi như thế nào?
+A. Giảm mạnh trong 6 giờ đầu
+B. Tăng lên, đạt đỉnh vào ngày thứ 3-4 của quá trình viêm
+C. Không thay đổi
+D. Tăng chậm và đạt đỉnh sau 2 tuần
+Đáp án: B
+
+Câu 24: Tình huống nào sau đây có thể gây tăng nồng độ AAT trong huyết thanh?
+A. Phụ nữ mang thai ở 3 tháng cuối
+B. Hội chứng thận hư
+C. Bệnh khí phế thũng do di truyền (kiểu hình Pi ZZ)
+D. Suy dinh dưỡng nặng
+Đáp án: A
+
+Câu 25: Một bệnh nhân bị viêm phổi nặng có kết quả xét nghiệm AAT ở giới hạn bình thường. Nhận định nào sau đây là hợp lý nhất?
+A. Bệnh nhân không có đáp ứng pha cấp
+B. Kết quả này loại trừ khả năng bệnh nhân bị thiếu hụt AAT thể dị hợp tử
+C. Nồng độ AAT này là "bình thường giả", có thể bệnh nhân có thiếu hụt AAT tiềm ẩn
+D. Tình trạng viêm của bệnh nhân không nặng
+Đáp án: C
+
+Câu 26: Ngoài khí phế thũng, thiếu hụt AAT còn liên quan đến bệnh lý ở cơ quan nào khác?
+A. Thận
+B. Não
+C. Gan
+D. Tuyến giáp
+Đáp án: C
+
+Câu 27: AAT thuộc nhóm protein nào sau đây?
+A. Lipocalin
+B. Globulin miễn dịch (Immunoglobulin)
+C. Serpin (Serine protease inhibitor)
+D. Metalloprotein
+Đáp án: C
+
+Câu 28: Kỹ thuật nào được sử dụng để xác định các thể di truyền khác nhau của AAT (ví dụ: Pi M, Pi S, Pi Z)?
+A. Miễn dịch đo độ đục
+B. Điện di ở điểm đẳng điện (Isoelectric focusing)
+C. Sắc ký khí
+D. Phản ứng chuỗi polymerase (PCR) thời gian thực
+Đáp án: B
+
+C. Haptoglobin (Hp) và Alpha-1-Acid Glycoprotein (AAG) 
+
+Câu 29: Chức năng chính của Haptoglobin (Hp) là gì?
+A. Vận chuyển vitamin B12
+B. Gắn với hemoglobin tự do trong huyết tương
+C. Điều hòa nồng độ canxi máu
+D. Ức chế sự đông máu
+Đáp án: B
+
+Câu 30: Nồng độ Haptoglobin huyết thanh sẽ thay đổi như thế nào trong một trường hợp tan máu nội mạch cấp tính và nghiêm trọng?
+A. Tăng rất cao
+B. Giảm xuống mức rất thấp hoặc không thể phát hiện được
+C. Không thay đổi
+D. Tăng nhẹ
+Đáp án: B
+
+Câu 31: Bệnh nhân bị hội chứng thận hư. Kết quả xét nghiệm nào sau đây được mong đợi đối với Haptoglobin?
+A. Giảm do mất qua nước tiểu
+B. Tăng
+C. Bình thường
+D. Không thể phát hiện
+Đáp án: B
+
+Câu 32: Tại sao tài liệu lại khuyến cáo nên xét nghiệm đồng thời Alpha-1-acid glycoprotein (AAG) và Haptoglobin (Hp)?
+A. Vì cả hai đều giảm trong tan máu
+B. Để phân biệt giữa tình trạng viêm và tan máu
+C. Vì cả hai đều do tủy xương sản xuất
+D. Vì AAG là một tiểu đơn vị của Hp
+Đáp án: B
+
+Câu 33: Một bệnh nhân bị sốt rét có kết quả: AAG tăng cao, Hp không phát hiện được. Chẩn đoán nào là phù hợp nhất?
+A. Bệnh nhân chỉ bị viêm, không có tan máu
+B. Bệnh nhân chỉ bị tan máu, không có viêm
+C. Bệnh nhân vừa có đáp ứng viêm mạnh, vừa có tan máu nội mạch nặng
+D. Kết quả xét nghiệm có mâu thuẫn, cần làm lại
+Đáp án: C
+
+Câu 34: Alpha-1-acid glycoprotein (AAG) có vai trò quan trọng trong việc gắn và vận chuyển nhóm chất nào sau đây?
+A. Các ion kim loại nặng như chì
+B. Các loại thuốc có tính kiềm và hormon steroid như progesteron
+C. Glucose và các loại đường đơn
+D. Sắt và đồng
+Đáp án: B
+
+Câu 35: Nồng độ AAG tăng 3-4 lần trong đáp ứng pha cấp và đạt đỉnh vào thời điểm nào?
+A. 6-12 giờ
+B. 24 giờ
+C. Ngày thứ 3 đến ngày thứ 5
+D. Sau 1 tuần
+Đáp án: C
+
+Câu 36: Tình trạng nào sau đây gây giảm nồng độ cả AAG và Hp?
+A. Điều trị bằng corticosteroid
+B. Tan máu nội mạch
+C. Tác động của estrogen (ví dụ: dùng thuốc tránh thai, mang thai)
+D. Viêm cấp
+Đáp án: C
+
+Câu 37: Một bệnh nhân có kiểu hình di truyền không có Haptoglobin (anhaptoglobinemia). Bệnh nhân này sẽ có nguy cơ cao bị tổn thương cơ quan nào nếu bị tan huyết?
+A. Gan
+B. Phổi
+C. Thận
+D. Não
+Đáp án: C
+
+D. Ceruloplasmin (Cp) và Bổ thể (C3, C4) 
+
+Câu 38: Ceruloplasmin (Cp) là protein chính vận chuyển ion kim loại nào trong máu?
+A. Sắt (Fe3+)
+B. Kẽm (Zn2+)
+C. Đồng (Cu2+)
+D. Magie (Mg2+)
+Đáp án: C
+
+Câu 39: Ngoài vai trò vận chuyển đồng, Cp còn có hoạt tính enzyme quan trọng là gì?
+A. Lipase (phân giải lipid)
+B. Amylase (phân giải tinh bột)
+C. Protease (phân giải protein)
+D. Ferroxidase (oxy hóa Fe2+ thành Fe3+)
+Đáp án: D
+
+Câu 40: Bệnh Wilson là một bệnh lý di truyền đặc trưng bởi sự ứ đọng đồng trong các mô. Nồng độ Ceruloplasmin huyết thanh ở đa số bệnh nhân Wilson sẽ như thế nào?
+A. Tăng rất cao
+B. Bình thường
+C. Thấp hoặc rất thấp
+D. Dao động không ổn định
+Đáp án: C
+
+Câu 41: Tình huống nào sau đây có thể gây tăng nồng độ Ceruloplasmin?
+A. Bệnh Wilson
+B. Hội chứng Menkes
+C. Phụ nữ sử dụng thuốc tránh thai đường uống
+D. Chế độ ăn thiếu đồng
+Đáp án: C
+
+Câu 42: Trong đáp ứng pha cấp, nồng độ Ceruloplasmin (một APR dương tính) thay đổi như thế nào?
+A. Tăng nhanh trong 12 giờ
+B. Tăng chậm và kéo dài
+C. Giảm
+D. Không thay đổi
+Đáp án: B
+
+Câu 43: Các thành phần bổ thể C3 và C4 được coi là các protein phản ứng pha cấp loại nào?
+A. Âm tính
+B. Dương tính
+C. Không thuộc loại nào
+D. Vừa âm vừa dương
+Đáp án: B
+
+Câu 44: Một bệnh nhân bị đợt cấp của Lupus ban đỏ hệ thống (SLE). Kết quả xét nghiệm C3 và C4 được dự đoán sẽ như thế nào và tại sao?
+A. Tăng cao, vì chúng là APR dương tính
+B. Bình thường, vì hai quá trình tổng hợp và tiêu thụ triệt tiêu nhau
+C. Thấp, vì tốc độ tiêu thụ trong các phức hợp miễn dịch vượt quá tốc độ tăng tổng hợp
+D. Không thể dự đoán được
+Đáp án: C
+
+Câu 45: Thiếu hụt di truyền thành phần nào của bổ thể có liên quan đến hội chứng phù mạch di truyền?
+A. C3
+B. C5
+C. Yếu tố H
+D. Chất ức chế C1 (C1 inhibitor)
+Đáp án: D
+
+Câu 46: Bệnh nhân bị nhiễm khuẩn huyết do Neisseria tái phát nhiều lần. Nên nghĩ đến khả năng thiếu hụt nhóm thành phần bổ thể nào?
+A. Các thành phần của con đường cổ điển (C1, C4, C2)
+B. Các thành phần của phức hợp tấn công màng (C5-C9)
+C. Chất ức chế C1
+D. Yếu tố D
+Đáp án: B
+
+Câu 47: Nồng độ Cp ở trẻ sơ sinh so với người lớn thì như thế nào?
+A. Cao hơn
+B. Tương đương
+C. Thấp hơn đáng kể
+D. Gấp đôi
+Đáp án: C
+
+Câu 48: Hệ thống bổ thể có thể được hoạt hóa bởi những con đường chính nào?
+A. Chỉ có con đường cổ điển
+B. Con đường cổ điển và con đường thay thế (alternative)
+C. Con đường cổ điển, con đường thay thế, và con đường lectin
+D. Chỉ có con đường lectin
+Đáp án: C
+
+Câu 49: Thiếu hụt C3 di truyền thường dẫn đến hậu quả lâm sàng nào nghiêm trọng nhất?
+A. Bệnh tự miễn giống Lupus
+B. Phù mạch di truyền
+C. Tái nhiễm khuẩn nặng, đặc biệt là với các vi khuẩn có vỏ
+D. Tan máu tự miễn
+Đáp án: C
+
+Câu 50: Một bệnh nhân có nồng độ C3 thấp, C4 bình thường. Điều này gợi ý sự hoạt hóa của con đường bổ thể nào?
+A. Con đường cổ điển
+B. Con đường thay thế
+C. Cả hai con đường
+D. Không con đường nào
+Đáp án: B
+
+Phần III: Các Protein Phản ứng Pha cấp Âm tính (APR-) trong Thực hành Lâm sàng 
+A. Albumin và Transthyretin (TTR/Prealbumin) 
+
+Câu 51: Chức năng nào sau đây KHÔNG phải là của Albumin?
+A. Duy trì áp lực keo của huyết tương
+B. Vận chuyển bilirubin, acid béo, và nhiều loại thuốc
+C. Cung cấp nguồn acid amin cho mô
+D. Nhận biết và gắn đặc hiệu với kháng nguyên vi khuẩn
+Đáp án: D
+
+Câu 52: Một bệnh nhân 70 tuổi nhập viện vì nhiễm khuẩn huyết. Kết quả xét nghiệm cho thấy CRP 250 mg/L và Albumin 2.5 g/dL (bình thường 3.5-5.2 g/dL). Nguyên nhân chính gây giảm Albumin trong trường hợp này là gì?
+A. Bệnh nhân bị suy dinh dưỡng mạn tính từ trước
+B. Gan giảm tổng hợp Albumin do tác động của các cytokine gây viêm
+C. Mất Albumin qua thận do tổn thương thận cấp
+D. Albumin bị thoát ra ngoài khoảng gian bào do tăng tính thấm mao mạch
+Đáp án: B
+
+Câu 53: Tại sao Transthyretin (TTR, hay Prealbumin) được coi là một chỉ dấu nhạy hơn Albumin để đánh giá tình trạng viêm cấp hoặc thay đổi dinh dưỡng cấp tính?
+A. Vì TTR có trọng lượng phân tử lớn hơn
+B. Vì TTR có thời gian bán hủy ngắn hơn nhiều so với Albumin
+C. Vì TTR được tổng hợp ở thận thay vì ở gan
+D. Vì TTR có nồng độ cao hơn Albumin trong máu
+Đáp án: B
+
+Câu 54: Một bệnh nhân bị xơ gan nặng. Nồng độ Albumin và TTR trong huyết thanh được dự kiến sẽ như thế nào?
+A. Cả hai đều tăng
+B. Cả hai đều giảm
+C. Albumin giảm, TTR tăng
+D. Albumin tăng, TTR giảm
+Đáp án: B
+
+Câu 55: TTR có chức năng vận chuyển các chất nào sau đây?
+A. Sắt và Đồng
+B. Hormon tuyến giáp (thyroxin) và Protein gắn retinol (RBP)
+C. Cholesterol và Triglyceride
+D. Glucose và Fructose
+Đáp án: B
+
+Câu 56: Bệnh nhân bị bỏng nặng trên diện rộng. Nồng độ albumin huyết thanh giảm nhanh chóng. Ngoài việc giảm tổng hợp do viêm, cơ chế nào khác góp phần chính vào sự sụt giảm này?
+A. Tăng phá hủy albumin ở da
+B. Mất albumin qua các bề mặt bỏng và sự thoát dịch ra ngoài lòng mạch
+C. Giảm hấp thu acid amin từ ruột
+D. Tăng sử dụng albumin làm năng lượng
+Đáp án: B
+
+Câu 57: Tình trạng di truyền hiếm gặp mà cơ thể gần như không sản xuất được albumin được gọi là gì?
+A. Bisalbuminemia
+B. Analbuminemia
+C. Hypoalbuminemia
+D. Dysalbuminemia
+Đáp án: B
+
+Câu 58: Một bệnh nhân có kết quả điện di protein cho thấy hai dải albumin riêng biệt. Tình trạng này được gọi là gì và ý nghĩa lâm sàng của nó là gì?
+A. Analbuminemia, tiên lượng rất xấu
+B. Bisalbuminemia, thường là một phát hiện lành tính
+C. Hyperalbuminemia, liên quan đến mất nước
+D. Gammopathy, liên quan đến u tủy
+Đáp án: B
+
+Câu 59: Kỹ thuật nào sau đây được coi là chính xác nhất để định lượng albumin trong huyết thanh?
+A. Điện di protein kết hợp đo mật độ
+B. Phương pháp nhuộm màu Bromocresol Green (BCG) hoặc Bromocresol Purple (BCP)
+C. Các kỹ thuật hóa miễn dịch (ví dụ: miễn dịch đo độ đục)
+D. Ước tính từ protein toàn phần
+Đáp án: C
+
+Câu 60: Sự hiện diện của một lượng nhỏ albumin trong nước tiểu (microalbumin niệu) là một dấu hiệu sớm của tổn thương cơ quan nào trong bệnh đái tháo đường?
+A. Gan
+B. Não
+C. Võng mạc
+D. Thận
+Đáp án: D
+
+Câu 61: Một bệnh nhân được nuôi dưỡng qua đường tĩnh mạch hoàn toàn trong 2 tuần. Để theo dõi đáp ứng dinh dưỡng trong thời gian ngắn, xét nghiệm nào sau đây là phù hợp nhất?
+A. Albumin
+B. Transthyretin (Prealbumin)
+C. Globulin
+D. Protein toàn phần
+Đáp án: B
+
+Câu 62: Tình trạng nào sau đây có thể dẫn đến tăng albumin huyết thanh (hyperalbuminemia)?
+A. Mất nước cấp tính
+B. Bệnh gan mạn tính
+C. Hội chứng thận hư
+D. Mang thai
+Đáp án: A
+
+Câu 63: Protein gắn Retinol (RBP) thường lưu thông trong máu dưới dạng phức hợp với protein nào để tránh bị lọc qua thận?
+A. Albumin
+B. Haptoglobin
+C. Transthyretin (TTR)
+D. Transferrin
+Đáp án: C
+
+Câu 64: Ở bệnh nhân suy thận mạn, nồng độ RBP huyết thanh thường thay đổi như thế nào?
+A. Giảm
+B. Tăng
+C. Bình thường
+D. Không thể đo được
+Đáp án: B
+
+Câu 65: Thiếu hụt kẽm (Zn2+) ảnh hưởng đến nồng độ RBP và Vitamin A như thế nào?
+A. Gây tăng cả hai
+B. Không ảnh hưởng
+C. Gây giảm cả hai
+D. Gây tăng RBP và giảm Vitamin A
+Đáp án: C
+
+B. Transferrin (Tf) 
+
+Câu 66: Chức năng chính của Transferrin (Tf) là gì?
+A. Vận chuyển oxy trong máu
+B. Vận chuyển sắt (Fe3+) trong huyết tương
+C. Vận chuyển lipid
+D. Tham gia vào quá trình đông máu
+Đáp án: B
+
+Câu 67: Trong bệnh cảnh thiếu máu do thiếu sắt (IDA - Iron Deficiency Anemia), nồng độ Transferrin huyết thanh và độ bão hòa Transferrin (TSAT) sẽ thay đổi như thế nào?
+A. Transferrin giảm, TSAT giảm
+B. Transferrin tăng, TSAT tăng
+C. Transferrin tăng, TSAT giảm
+D. Transferrin giảm, TSAT tăng
+Đáp án: C
+
+Câu 68: Ngược lại với thiếu máu do thiếu sắt, trong bệnh cảnh thiếu máu do viêm/bệnh mạn tính (ACD - Anemia of Chronic Disease), nồng độ Transferrin và Ferritin sẽ như thế nào?
+A. Transferrin tăng, Ferritin giảm
+B. Transferrin giảm hoặc bình thường, Ferritin tăng hoặc bình thường
+C. Transferrin tăng, Ferritin tăng
+D. Transferrin giảm, Ferritin giảm
+Đáp án: B
+
+Câu 69: Một phân tử Transferrin có khả năng gắn với bao nhiêu ion Fe3+?
+A. 1
+B. 2
+C. 4
+D. 8
+Đáp án: B
+
+Câu 70: Tình trạng nào sau đây có thể gây tăng nồng độ Transferrin?
+A. Viêm gan mạn tính
+B. Suy dinh dưỡng
+C. Mang thai hoặc sử dụng estrogen
+D. Nhiễm khuẩn cấp
+Đáp án: C
+
+Câu 71: Khả năng gắn sắt toàn phần (TIBC - Total Iron-Binding Capacity) phản ánh điều gì?
+A. Nồng độ sắt tự do trong huyết thanh
+B. Nồng độ Ferritin dự trữ trong gan
+C. Nồng độ tối đa của sắt có thể được gắn bởi Transferrin trong huyết thanh
+D. Tốc độ hấp thu sắt ở ruột
+Đáp án: C
+
+Câu 72: Bệnh nhân bị bệnh rối loạn sắc tố di truyền (hemochromatosis) có đặc điểm là quá tải sắt. Kết quả xét nghiệm sắt của bệnh nhân này thường sẽ là:
+A. Sắt huyết thanh giảm, Transferrin tăng, TSAT giảm
+B. Sắt huyết thanh tăng, Transferrin giảm, TSAT tăng cao
+C. Sắt huyết thanh tăng, Transferrin bình thường hoặc giảm nhẹ, TSAT tăng rất cao (>55%)
+D. Sắt huyết thanh bình thường, Transferrin bình thường, TSAT bình thường
+Đáp án: C
+
+Câu 73: Xét nghiệm thụ thể của transferrin hòa tan (sTfR - soluble Transferrin Receptor) có giá trị nhất trong việc phân biệt hai tình trạng nào?
+A. Thiếu máu do thiếu sắt và Thiếu máu do bệnh mạn tính
+B. Bệnh Wilson và xơ gan
+C. Viêm tụy cấp và viêm tụy mạn
+D. Hội chứng thận hư và viêm cầu thận
+Đáp án: A
+
+Câu 74: Công thức nào sau đây được dùng để ước tính nồng độ Transferrin (mg/dL) từ TIBC (μg/dL)?
+A. Tf=1.43×TIBC
+B. Tf=TIBC/0.7
+C. Tf=0.7×TIBC
+D. Tf=TIBC
+Đáp án: C
+
+Câu 75: Tại sao nồng độ Transferrin giảm trong phản ứng pha cấp?
+A. Vì nó bị tiêu thụ tại vị trí viêm
+B. Vì nó là một protein phản ứng pha cấp âm tính, gan giảm tổng hợp dưới tác động của cytokine
+C. Vì nó bị mất qua thận
+D. Vì nó gắn vào vi khuẩn và bị loại bỏ
+Đáp án: B
+
+Phần IV: Các Tình huống Lâm sàng & Chẩn đoán Phân biệt 
+
+Câu 76: Một bệnh nhân nam 68 tuổi, tiền sử viêm khớp dạng thấp, nhập viện vì mệt mỏi. Xét nghiệm máu cho thấy thiếu máu hồng cầu nhỏ. Kết quả xét nghiệm sắt: Sắt huyết thanh giảm, TIBC giảm, Ferritin tăng. Chẩn đoán nào phù hợp nhất?
+A. Thiếu máu do thiếu sắt
+B. Thiếu máu do bệnh mạn tính (ACD)
+C. Thiếu máu tan máu
+D. Bệnh Thalassemia
+Đáp án: B
+
+Câu 77: Một phụ nữ 30 tuổi, mang thai 32 tuần, đi khám định kỳ. Xét nghiệm máu cho thấy Transferrin tăng cao, nhưng CRP và các chỉ số viêm khác bình thường. Diễn giải nào là phù hợp nhất?
+A. Bệnh nhân bị thiếu sắt tiềm ẩn
+B. Bệnh nhân có một tình trạng viêm không triệu chứng
+C. Đây là một thay đổi sinh lý bình thường trong thai kỳ
+D. Bệnh nhân có nguy cơ cao bị bệnh quá tải sắt
+Đáp án: C
+
+Câu 78: Một bệnh nhân bị hội chứng thận hư có phù toàn thân. Xét nghiệm cho thấy: Albumin huyết thanh 1.8 g/dL (rất thấp), Protein niệu 24h là 10 g. Tuy nhiên, nồng độ Alpha-2-macroglobulin (AMG) lại tăng cao. Tại sao AMG lại tăng?
+A. Vì AMG không bị mất qua nước tiểu do kích thước quá lớn và gan tăng tổng hợp bù trừ
+B. Vì AMG là một protein phản ứng pha cấp âm tính
+C. Vì bệnh nhân có bệnh Wilson đi kèm
+D. Vì AMG được sản xuất bởi thận
+Đáp án: A
+
+Câu 79: Bệnh nhân nam 40 tuổi, nghiện rượu, nhập viện vì vàng da, cổ trướng. Xét nghiệm có: Albumin giảm, TTR giảm, CRP tăng nhẹ, IgA tăng rất cao, IgG và IgM bình thường. Kiểu hình này gợi ý nhiều nhất đến bệnh lý nào?
+A. Viêm gan virus cấp
+B. Tắc mật do sỏi
+C. Bệnh gan do rượu
+D. Ung thư gan nguyên phát
+Đáp án: C
+
+Câu 80: Một bệnh nhân được chẩn đoán u tủy xương (đa u tủy). Kết quả điện di protein huyết thanh sẽ cho thấy hình ảnh đặc trưng nào?
+A. Giảm toàn bộ các phân đoạn globulin
+B. Tăng đa dòng ở vùng gamma-globulin (dải rộng, mờ)
+C. Xuất hiện một dải hẹp, đậm nét ở vùng gamma hoặc beta-globulin (đỉnh đơn dòng)
+D. Tăng rõ rệt ở vùng alpha-1 globulin
+Đáp án: C
+
+Câu 81: Case lâm sàng: Bệnh nhân nam 55 tuổi vào viện vì đau ngực. ECG và men tim xác nhận nhồi máu cơ tim cấp. Xét nghiệm ngày thứ 3 sau nhồi máu cho thấy: CRP 150 mg/L, Haptoglobin tăng, AAT tăng, Albumin giảm. Diễn giải bộ xét nghiệm này.
+A. Bệnh nhân có nhiễm khuẩn huyết đi kèm
+B. Đây là một đáp ứng pha cấp điển hình sau tổn thương mô (hoại tử cơ tim)
+C. Bệnh nhân có tan máu và bệnh gan từ trước
+D. Các kết quả xét nghiệm mâu thuẫn với nhau
+Đáp án: B
+
+Câu 82: Bệnh nhân nữ 25 tuổi, có tiền sử bệnh Crohn (bệnh viêm ruột), đang dùng thuốc điều trị. Cô cảm thấy khỏe hơn. Xét nghiệm nào là tốt nhất để đánh giá khách quan rằng tình trạng viêm của bệnh đã thuyên giảm?
+A. Nồng độ Albumin trở về bình thường
+B. Nồng độ CRP giảm đáng kể hoặc về bình thường
+C. Nồng độ Transferrin tăng trở lại
+D. Số lượng tiểu cầu giảm
+Đáp án: B
+
+Câu 83: Một bệnh nhân có kết quả xét nghiệm: C3 thấp, C4 thấp, CRP tăng cao. Tình huống lâm sàng nào sau đây là phù hợp nhất?
+A. Đợt cấp của viêm khớp dạng thấp
+B. Nhiễm khuẩn huyết do tụ cầu
+C. Đợt hoạt động của bệnh Lupus ban đỏ hệ thống
+D. Viêm gan cấp do virus B
+Đáp án: C
+
+Câu 84: Một bệnh nhân có tiền sử thiếu máu, được truyền máu nhiều lần. Xét nghiệm hiện tại cho thấy: Sắt huyết thanh tăng, Ferritin rất cao, TIBC bình thường, TSAT tăng cao. Chẩn đoán có khả năng nhất là gì?
+A. Thiếu máu do thiếu sắt
+B. Viêm mạn tính
+C. Quá tải sắt thứ phát do truyền máu
+D. Bệnh Wilson
+Đáp án: C
+
+Câu 85: Bệnh nhân nam 20 tuổi đến khám vì mệt mỏi và vàng da nhẹ. Xét nghiệm: Bilirubin gián tiếp tăng, LDH tăng, Haptoglobin < 10 mg/dL. Các chỉ số viêm khác (CRP, AAG) bình thường. Tình trạng này gợi ý điều gì?
+A. Viêm gan cấp
+B. Tắc mật
+C. Một quá trình tan máu đang diễn ra mà không kèm viêm hệ thống
+D. Suy gan
+Đáp án: C
+
+Câu 86: Trẻ sơ sinh 2 tuần tuổi, bị ứ mật kéo dài. Xét nghiệm có AAT tăng. Nguyên nhân có thể là gì?
+A. Đây là dấu hiệu của thiếu hụt AAT
+B. Tình trạng viêm gan sơ sinh gây ra đáp ứng pha cấp
+C. Trẻ bị nhiễm khuẩn đường ruột
+D. Ảnh hưởng từ estrogen của mẹ
+Đáp án: B
+
+Câu 87: Một bệnh nhân ung thư đang được hóa trị liệu và bị suy dinh dưỡng nặng. Kết quả xét nghiệm nào sau đây được dự kiến?
+A. Albumin tăng, TTR tăng, Transferrin tăng
+B. Albumin giảm, TTR giảm, Transferrin giảm
+C. Albumin bình thường, TTR giảm, Transferrin tăng
+D. Albumin giảm, TTR bình thường, Transferrin bình thường
+Đáp án: B
+
+Câu 88: Bệnh nhân bị viêm tụy cấp nặng. Nồng độ protein nào sau đây có thể được sử dụng để đánh giá mức độ phá hủy mô và tiên lượng?
+A. IgG
+B. CRP
+C. IgA
+D. Albumin
+Đáp án: B
+
+Câu 89: Bệnh nhân nữ 60 tuổi, béo phì, bị đau khớp gối. Xét nghiệm CRP hs (độ nhạy cao) là 4.5 mg/L (bình thường < 3 mg/L). Điều này có ý nghĩa gì?
+A. Bệnh nhân chắc chắn bị viêm khớp dạng thấp
+B. Bệnh nhân có tình trạng viêm hệ thống mức độ thấp, có thể liên quan đến béo phì và thoái hóa khớp
+C. Kết quả không có ý nghĩa lâm sàng
+D. Bệnh nhân cần được tầm soát ung thư ngay lập tức
+Đáp án: B
+
+Câu 90: Một bệnh nhân có kết quả điện di miễn dịch huyết thanh cho thấy sự tăng đa dòng của IgG và IgA. Tình trạng nào sau đây là nguyên nhân có khả năng nhất?
+A. U tủy xương thể IgG
+B. Bệnh gan mạn tính hoặc bệnh tự miễn
+C. Suy giảm miễn dịch bẩm sinh
+D. Nhiễm HIV giai đoạn cuối
+Đáp án: B
+
+Câu 91: Bệnh nhân nam 70 tuổi, nhập viện vì gãy xương bệnh lý. Điện di protein có đỉnh đơn dòng IgG, calci máu tăng, suy thận. Chẩn đoán phù hợp nhất là gì?
+A. Bệnh Waldenström
+B. Đa u tủy (Multiple Myeloma)
+C. Amyloidosis nguyên phát
+D. Ung thư hạch Lympho
+Đáp án: B
+
+Câu 92: Một bệnh nhân được chẩn đoán thiếu máu do thiếu sắt và được bắt đầu điều trị bằng viên sắt uống. Xét nghiệm nào sẽ cho thấy sự đáp ứng sớm nhất với điều trị?
+A. Nồng độ Hemoglobin tăng
+B. Nồng độ Ferritin tăng
+C. Số lượng hồng cầu lưới tăng
+D. Nồng độ Transferrin giảm
+Đáp án: C
+
+Câu 93: Bệnh nhân bị hen phế quản dị ứng. Nồng độ immunoglobulin nào được dự kiến sẽ tăng?
+A. IgG
+B. IgA
+C. IgM
+D. IgE
+Đáp án: D
+
+Câu 94: Tại sao nồng độ albumin ở trẻ sơ sinh non tháng thường thấp?
+A. Do trẻ bị mất albumin qua da
+B. Do chức năng tổng hợp của gan chưa trưởng thành
+C. Do trẻ bị nhiễm khuẩn trong tử cung
+D. Do sữa mẹ không đủ albumin
+Đáp án: B
+
+Câu 95: Bệnh nhân có tiền sử ghép thận, đang dùng thuốc ức chế miễn dịch. Bệnh nhân bị sốt và có các dấu hiệu nhiễm trùng. Tại sao việc diễn giải các chỉ số viêm ở bệnh nhân này lại khó khăn?
+A. Vì thuốc ức chế miễn dịch làm tăng giả tạo các chỉ số viêm
+B. Vì thuốc ức chế miễn dịch có thể làm lu mờ hoặc giảm bớt đáp ứng viêm, khiến các chỉ số như CRP không tăng cao như mong đợi
+C. Vì thận ghép không sản xuất được protein viêm
+D. Vì bệnh nhân thường có tan máu đi kèm
+Đáp án: B
+
+Phần V: Các Protein Liên quan và Phương pháp Xét nghiệm 
+
+Câu 96: Beta-2-microglobulin (BMG) là một protein nhỏ, là chuỗi nhẹ của phân tử nào?
+A. Hemoglobin
+B. Kháng nguyên bạch cầu người (HLA)
+C. Immunoglobulin M
+D. Thụ thể tế bào T
+Đáp án: B
+
+Câu 97: Nồng độ BMG huyết thanh tăng cao thường được sử dụng để đánh giá điều gì?
+A. Tình trạng ứ mật
+B. Hoạt động của các bệnh ung thư hệ tạo máu (ví dụ: u tủy, lymphoma) và chức năng lọc của cầu thận
+C. Nguy cơ nhồi máu cơ tim
+D. Mức độ thiếu sắt
+Đáp án: B
+
+Câu 98: Kỹ thuật điện di protein huyết thanh phân tách các protein chủ yếu dựa trên đặc tính nào của chúng?
+A. Kích thước phân tử và khả năng hòa tan
+B. Điện tích bề mặt và kích thước/hình dạng phân tử
+C. Khả năng gắn với kim loại
+D. Nguồn gốc tổng hợp (gan hay tủy xương)
+Đáp án: B
+
+Câu 99: Tại sao kỹ thuật điện di protein không được khuyến cáo để định lượng chính xác nồng độ Albumin?
+A. Vì dải albumin quá mờ để đo
+B. Vì phương pháp đo mật độ dải màu sau điện di có độ chính xác và độ lặp lại thấp
+C. Vì albumin không di chuyển trong điện trường
+D. Vì có nhiều protein khác cùng di chuyển trong dải albumin
+Đáp án: B
+
+Câu 100: IgM là kháng thể thường xuất hiện đầu tiên trong đáp ứng miễn dịch tiên phát. Đặc điểm cấu trúc nào khiến nó chủ yếu tồn tại trong lòng mạch?
+A. Nó có chuỗi nặng epsilon
+B. Nó có một vùng bản lề rất linh hoạt
+C. Nó tồn tại ở dạng pentamer (năm đơn vị liên kết với nhau), tạo ra một phân tử có trọng lượng rất lớn
+D. Nó không bị glycosyl hóa
+Đáp án: C
+</script>
+
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+
+function parseQuizData(text) {
+    const lines = text.split('\n').map(l => l.trim()).filter(l => l);
+    const questions = [];
+    let currentQ = null;
+    let currentMode = 'question';
+
+    lines.forEach(line => {
+        const isQ = line.match(/^(?:Câu|Question)\s*(\d+)[^:\.\-]*[:\.\-]\s*(.*)/i);
+        const isOpt = line.match(/^([A-E])[\.\)\:\-\/]\s*(.*)/i);
+        const isAns = line.match(/^Đáp án\s*[:\.\-]?\s*([A-E])/i);
+
+        if (isQ && !isAns) {
+            if (currentQ) questions.push(currentQ);
+            currentQ = { id: isQ[1], question: isQ[2] || '', options: {}, answer: '' };
+            currentMode = 'question';
+        } else if (currentQ) {
+            if (isAns) {
+                currentQ.answer = isAns[1].toUpperCase();
+                currentMode = 'answer';
+            } else if (isOpt && currentMode !== 'answer') {
+                currentQ.options[isOpt[1].toUpperCase()] = isOpt[2].trim();
+                currentMode = 'options';
+            } else if (!line.match(/^(TRẮC NGHIỆM|KHÍ MÁU|CHUYỂN HÓA|HÓA SINH|SẮT VÀ PORPHYRIN|ACID AMIN|ENZYM LÂM SÀNG|RỐI LOẠN|NƯỚC VÀ ĐIỆN GIẢI|TỤY, DẠ DÀY|VITAMIN|DẤU ẤN UNG THƯ|VIÊM KHỚP|THAI NGHÉN|NHI KHOA|LÃO KHOA|TIM MẠCH|THẬN|TIẾT NIỆU|XÉT NGHIỆM|PHẦN|Phần|BỆNH|SOẠN BY|TEAMDRCAT|\( Tài liệu|Tài liệu|Nghiêm cấm|\d+\.\d+|Mục|Chủ đề|Bảng|I\.|II\.|III\.|IV\.|V\.|VI\.|VII\.|VIII\.|Case|Tình huống|\[\.\.\.|Giải thích|Câu Hỏi Tổng Hợp|A\.|B\.|C\.|D\.)/i)) {
+                if (currentMode === 'question') {
+                    currentQ.question += (currentQ.question ? '\n' : '') + line;
+                } else if (currentMode === 'options') {
+                    const keys = Object.keys(currentQ.options);
+                    if (keys.length > 0) {
+                        const lastKey = keys[keys.length - 1];
+                        currentQ.options[lastKey] += '\n' + line;
+                    }
+                } 
+            }
+        }
+    });
+    if (currentQ) questions.push(currentQ);
+    return questions;
+}
+
+const playCorrectSound = () => {
+    try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContext) return;
+        const ctx = new AudioContext();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(600, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(1200, ctx.currentTime + 0.1);
+        gain.gain.setValueAtTime(0.1, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.15);
+        osc.start(ctx.currentTime);
+        osc.stop(ctx.currentTime + 0.15);
+    } catch (e) { console.error(e); }
+};
+
+const playIncorrectSound = () => {
+    try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContext) return;
+        const ctx = new AudioContext();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(300, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(150, ctx.currentTime + 0.2);
+        gain.gain.setValueAtTime(0.1, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.2);
+        osc.start(ctx.currentTime);
+        osc.stop(ctx.currentTime + 0.2);
+    } catch (e) { console.error(e); }
+};
+
+function App() {
+    const [appState, setAppState] = useState('intro');
+    const [questions, setQuestions] = useState([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [answers, setAnswers] = useState({});
+    const [flagged, setFlagged] = useState(new Set());
+    const [timeRemaining, setTimeRemaining] = useState(0); 
+    const [showMatrix, setShowMatrix] = useState(false);
+    const [isPaused, setIsPaused] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isSoundEnabled, setIsSoundEnabled] = useState(true);
+    
+    const scrollContainerRef = useRef(null);
+
+    useEffect(() => {
+        const rawData = document.getElementById('quizData').textContent || '';
+        const parsedQs = parseQuizData(rawData);
+        setQuestions(parsedQs);
+        setTimeRemaining(parsedQs.length * 60);
+    }, []);
+
+    useEffect(() => {
+        if (appState === 'result' && scrollContainerRef.current) {
+            scrollContainerRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [appState]);
+
+    useEffect(() => {
+        let timer;
+        if (appState === 'quiz' && !isPaused && timeRemaining > 0) {
+            timer = setInterval(() => setTimeRemaining(p => p - 1), 1000);
+        } else if (timeRemaining <= 0 && appState === 'quiz') {
+            setAppState('result');
+        }
+        return () => clearInterval(timer);
+    }, [appState, timeRemaining, isPaused]);
+
+    useEffect(() => {
+        if (isDarkMode) document.documentElement.classList.add('dark');
+        else document.documentElement.classList.remove('dark');
+    }, [isDarkMode]);
+
+    const formatTime = (seconds) => {
+        const h = Math.floor(seconds / 3600);
+        const m = Math.floor((seconds % 3600) / 60);
+        const s = seconds % 60;
+        if (h > 0) return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+    };
+
+    const startQuiz = () => {
+        if (questions.length === 0) {
+            alert("Lỗi tải dữ liệu câu hỏi.");
+            return;
+        }
+        setAppState('quiz');
+        setAnswers({});
+        setFlagged(new Set());
+        setTimeRemaining(questions.length * 60);
+        setCurrentIndex(0);
+        setIsPaused(false);
+    };
+
+    const restartQuiz = () => {
+        setAppState('intro');
+        setAnswers({});
+        setFlagged(new Set());
+        setTimeRemaining(questions.length * 60);
+        setCurrentIndex(0);
+        setShowMatrix(false);
+        if (scrollContainerRef.current) scrollContainerRef.current.scrollTo({ top: 0 });
+    };
+
+    const togglePause = () => {
+        if (appState === 'quiz') setIsPaused(!isPaused);
+    };
+
+    const handleSelectAnswer = (key) => {
+        if (answers[currentIndex] || appState !== 'quiz' || isPaused) return;
+        
+        const isCorrect = questions[currentIndex].answer === key;
+        if (isSoundEnabled) {
+            if (isCorrect) {
+                playCorrectSound();
+            } else {
+                playIncorrectSound();
+            }
+        }
+        
+        setAnswers(prev => ({ ...prev, [currentIndex]: key }));
+    };
+
+    const toggleFlag = () => {
+        const newFlagged = new Set(flagged);
+        if (newFlagged.has(currentIndex)) newFlagged.delete(currentIndex);
+        else newFlagged.add(currentIndex);
+        setFlagged(newFlagged);
+    };
+
+    const calculateScore = () => questions.reduce((acc, q, i) => (answers[i] === q.answer ? acc + 1 : acc), 0);
+
+    const getEncouragement = () => {
+        if (questions.length === 0) return null;
+        const score = calculateScore();
+        const percent = score / questions.length;
+        if (percent >= 0.9) return { title: "Kiến Thức Tuyệt Vời!", text: "Bạn nắm rất vững chuyên đề Hóa sinh. Chúc mừng bạn!", icon: "fa-vial-circle-check", color: "text-teal-700 dark:text-teal-300 bg-teal-100 dark:bg-teal-900/40 border-teal-300 dark:border-teal-700" };
+        if (percent >= 0.7) return { title: "Kết Quả Khá Tốt!", text: "Kiến thức của bạn hoạt động rất ổn định. Hãy xem lại vài câu sai nhé.", icon: "fa-check-circle", color: "text-green-600 dark:text-green-300 bg-green-50 dark:bg-green-900/40 border-green-200 dark:border-green-700" };
+        if (percent >= 0.5) return { title: "Cần Bổ Sung Thêm!", text: "Bạn cần nạp thêm kiến thức để xử lý các câu hỏi phức tạp hơn nhé!", icon: "fa-book-medical", color: "text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/40 border-amber-200 dark:border-amber-700" };
+        return { title: "Cần Cố Gắng Hơn!", text: "Đừng nản chí! Hãy ôn tập lại kỹ lý thuyết nhé!", icon: "fa-triangle-exclamation", color: "text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/40 border-red-200 dark:border-red-700" };
+    };
+
+    const renderQuizContent = () => {
+        if (isPaused) {
+            return (
+                <div className="bg-white dark:bg-slate-800 rounded-3xl p-16 text-center shadow-xl border border-slate-100 dark:border-slate-700 animate-in fade-in zoom-in duration-300 mt-10">
+                    <div className="w-24 h-24 bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 rounded-full flex items-center justify-center mx-auto mb-8">
+                        <i className="fa-solid fa-pause text-5xl"></i>
+                    </div>
+                    <h2 className="text-3xl font-black text-slate-800 dark:text-slate-100 mb-4">Bài thi đang tạm dừng</h2>
+                    <button onClick={togglePause} className="bg-teal-600 text-white px-12 py-4 rounded-2xl font-bold text-xl shadow-lg shadow-teal-200 dark:shadow-none hover:bg-teal-700 transition-all">Tiếp tục ngay</button>
+                </div>
+            );
+        }
+
+        if (appState === 'result') {
+            const msg = getEncouragement();
+            return (
+                <div className="space-y-8 animate-in slide-in-from-bottom-8 duration-500 mt-4">
+                    <div className="bg-white dark:bg-slate-800 p-10 md:p-12 rounded-[2rem] text-center shadow-xl border border-slate-100 dark:border-slate-700 relative overflow-hidden">
+                        <div className="absolute top-0 left-0 w-full h-2 bg-slate-500"></div>
+                        <div className="w-24 h-24 bg-slate-500 text-white rounded-full flex items-center justify-center text-5xl mx-auto mb-6 shadow-lg border-4 border-slate-50 dark:border-slate-700">
+                            <i className="fa-solid fa-shield-halved text-4xl"></i>
+                        </div>
+                        <h2 className="text-3xl font-black text-slate-800 dark:text-slate-100 mb-6">Hoàn thành bài test!</h2>
+                        
+                        {msg && (
+                            <div className={`p-6 rounded-2xl border mb-8 flex flex-col items-center gap-2 ${msg.color}`}>
+                                <i className={`fa-solid ${msg.icon} text-4xl mb-1 opacity-80`}></i>
+                                <h3 className="text-xl font-black uppercase tracking-wide">{msg.title}</h3>
+                                <p className="text-base font-medium opacity-90 max-w-lg">{msg.text}</p>
+                            </div>
+                        )}
+                        
+                        <div className="flex flex-col items-center gap-1 mb-8">
+                            <div className="flex items-baseline gap-2">
+                                <span className="text-7xl font-black text-slate-900 dark:text-white tracking-tighter">{calculateScore()}</span>
+                                <span className="text-2xl font-bold text-slate-400 dark:text-slate-500">/ {questions.length}</span>
+                            </div>
+                            <p className="text-slate-400 font-bold uppercase tracking-widest text-xs">Điểm số của bạn</p>
+                        </div>
+                        
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+                            <div className="bg-green-50 dark:bg-green-900/30 p-3 rounded-xl border border-green-100 dark:border-green-800/50">
+                                <p className="text-[10px] font-black text-green-600 dark:text-green-400 uppercase mb-1">Đúng</p>
+                                <p className="text-xl font-black text-green-700 dark:text-green-300">{calculateScore()}</p>
+                            </div>
+                            <div className="bg-red-50 dark:bg-red-900/30 p-3 rounded-xl border border-red-100 dark:border-red-800/50">
+                                <p className="text-[10px] font-black text-red-600 dark:text-red-400 uppercase mb-1">Sai</p>
+                                <p className="text-xl font-black text-red-700 dark:text-red-300">{Object.keys(answers).length - calculateScore()}</p>
+                            </div>
+                            <div className="bg-slate-50 dark:bg-slate-700 p-3 rounded-xl border border-slate-200 dark:border-slate-600">
+                                <p className="text-[10px] font-black text-slate-500 dark:text-slate-400 uppercase mb-1">Bỏ qua</p>
+                                <p className="text-xl font-black text-slate-600 dark:text-slate-300">{questions.length - Object.keys(answers).length}</p>
+                            </div>
+                            <div className="bg-teal-50 dark:bg-teal-900/30 p-3 rounded-xl border border-teal-100 dark:border-teal-800/50">
+                                <p className="text-[10px] font-black text-teal-600 dark:text-teal-400 uppercase mb-1">Cờ</p>
+                                <p className="text-xl font-black text-teal-700 dark:text-teal-300">{flagged.size}</p>
+                            </div>
+                        </div>
+
+                        <div className="mt-8 mb-8 p-6 bg-slate-50 dark:bg-slate-900/30 rounded-2xl border border-slate-200 dark:border-slate-800/60 flex flex-col items-center gap-3">
+                            <div className="w-16 h-16 bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-full flex items-center justify-center text-3xl shadow-sm mb-2">
+                                <i className="fa-solid fa-medal"></i>
+                            </div>
+                            <h3 className="text-xl font-black text-slate-800 dark:text-slate-300">Cảm ơn bạn đã hoàn thành bài thi!</h3>
+                            <p className="text-slate-700 dark:text-slate-200 font-medium text-center">Chúc bạn ôn tập thật tốt và đạt kết quả cao trong kỳ thi sắp tới.</p>
+                            <div className="mt-3 p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center gap-3 text-left w-full max-w-lg shadow-sm">
+                                <i className="fa-solid fa-file-pdf text-red-500 text-2xl"></i>
+                                <span className="text-sm font-medium text-slate-700 dark:text-slate-300 leading-snug">Bạn có thể tra cứu đáp án chi tiết ở file PDF do <strong>TEAMDRCAT</strong> biên soạn.</span>
+                            </div>
+                        </div>
+                        
+                        <button onClick={restartQuiz} className="w-full bg-slate-900 dark:bg-slate-700 hover:bg-slate-800 dark:hover:bg-slate-600 text-white text-lg font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-slate-500/30 dark:shadow-none uppercase tracking-wide mb-3">
+                            <i className="fa-solid fa-rotate-right text-xl"></i> Làm lại bài test
+                        </button>
+                        <button onClick={() => { setAppState('review'); setCurrentIndex(0); }} className="w-full bg-teal-100 dark:bg-teal-900/40 hover:bg-teal-200 dark:hover:bg-teal-800/60 text-teal-700 dark:text-teal-300 text-lg font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all uppercase tracking-wide">
+                            <i className="fa-solid fa-eye text-xl"></i> Xem lại bài làm
+                        </button>
+                        
+                    </div>
+                </div>
+            );
+        }
+
+        if (appState === 'review') {
+            return (
+                <div className="space-y-6 animate-in fade-in duration-300">
+                    <div className="bg-orange-50 dark:bg-orange-900/30 p-4 rounded-2xl border border-orange-200 dark:border-orange-800/50 flex items-center justify-between shadow-sm sticky top-0 z-20">
+                        <h2 className="text-lg font-black text-orange-800 dark:text-orange-400 uppercase tracking-tight"><i className="fa-solid fa-list-check mr-2"></i> Danh sách tất cả câu hỏi</h2>
+                    </div>
+                    
+                    {questions.length > 0 && questions.map((q, index) => {
+                        const isSelected = !!answers[index];
+                        const isCorrect = answers[index] === q.answer;
+                        
+                        let qStatus = <span className="text-slate-500 dark:text-slate-400 font-bold text-sm"><i className="fa-solid fa-minus mr-1"></i>Chưa trả lời</span>;
+                        let qTagClass = "px-4 py-1.5 rounded-lg text-xs font-black uppercase tracking-widest text-white shadow-sm bg-slate-400 dark:bg-slate-600";
+                        let qBoxClass = "bg-white dark:bg-slate-800 rounded-[1.5rem] shadow-sm border-2 p-6 md:p-8 relative overflow-hidden border-slate-200 dark:border-slate-700";
+
+                        if (isSelected) {
+                            if (isCorrect) {
+                                qStatus = <span className="text-green-600 dark:text-green-400 font-bold text-sm"><i className="fa-solid fa-check mr-1"></i>Đúng</span>;
+                                qTagClass = "px-4 py-1.5 rounded-lg text-xs font-black uppercase tracking-widest text-white shadow-sm bg-green-500 dark:bg-green-600";
+                                qBoxClass = "bg-white dark:bg-slate-800 rounded-[1.5rem] shadow-sm border-2 p-6 md:p-8 relative overflow-hidden border-green-200 dark:border-green-800/60";
+                            } else {
+                                qStatus = <span className="text-red-600 dark:text-red-400 font-bold text-sm"><i className="fa-solid fa-xmark mr-1"></i>Sai</span>;
+                                qTagClass = "px-4 py-1.5 rounded-lg text-xs font-black uppercase tracking-widest text-white shadow-sm bg-red-500 dark:bg-red-600";
+                                qBoxClass = "bg-white dark:bg-slate-800 rounded-[1.5rem] shadow-sm border-2 p-6 md:p-8 relative overflow-hidden border-red-200 dark:border-red-800/60";
+                            }
+                        }
+                        
+                        return (
+                            <div key={index} id={`review-q-${index}`} className={qBoxClass}>
+                                <div className="flex justify-between items-center mb-6">
+                                    <div className="flex items-center gap-3">
+                                        <span className={qTagClass}>Câu {q.id}</span>
+                                        {qStatus}
+                                    </div>
+                                </div>
+                                <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 leading-snug mb-6 whitespace-pre-wrap">{q.question}</h3>
+                                <div className="grid gap-3 mb-6">
+                                    {['A', 'B', 'C', 'D', 'E'].map(key => {
+                                        const label = q.options[key];
+                                        if (!label) return null;
+                                        
+                                        const isUserChoice = answers[index] === key;
+                                        const isCorrectOption = q.answer === key;
+                                        
+                                        let btnClass = "w-full p-4 rounded-xl border-2 text-left flex items-center gap-4 relative border-slate-200 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-500 dark:text-slate-400 opacity-70 grayscale";
+                                        let spanClass = "w-8 h-8 rounded-lg flex items-center justify-center font-bold text-base shrink-0 bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-2 border-slate-200 dark:border-slate-600";
+                                        
+                                        if (isCorrectOption) {
+                                            btnClass = "w-full p-4 rounded-xl border-2 text-left flex items-center gap-4 relative bg-green-50 dark:bg-green-900/30 border-green-500 dark:border-green-600 text-green-800 dark:text-green-200 shadow-sm ring-1 ring-green-500";
+                                            spanClass = "w-8 h-8 rounded-lg flex items-center justify-center font-bold text-base shrink-0 bg-green-500 dark:bg-green-600 text-white border-green-500 dark:border-green-600";
+                                        } else if (isUserChoice) {
+                                            btnClass = "w-full p-4 rounded-xl border-2 text-left flex items-center gap-4 relative bg-red-50 dark:bg-red-900/30 border-red-500 dark:border-red-600 text-red-800 dark:text-red-200 shadow-sm";
+                                            spanClass = "w-8 h-8 rounded-lg flex items-center justify-center font-bold text-base shrink-0 bg-red-500 dark:bg-red-600 text-white border-red-500 dark:border-red-600";
+                                        }
+                                        
+                                        return (
+                                            <div key={key} className={btnClass}>
+                                                <span className={spanClass}>{key}</span>
+                                                <span className="text-base font-medium leading-normal flex-1 pr-8 whitespace-pre-wrap">{label}</span>
+                                                {isCorrectOption && <i className="fa-solid fa-circle-check text-2xl text-green-500 dark:text-green-400 absolute right-4 top-1/2 -translate-y-1/2"></i>}
+                                                {isUserChoice && !isCorrectOption && <i className="fa-solid fa-circle-xmark text-2xl text-red-500 dark:text-red-400 absolute right-4 top-1/2 -translate-y-1/2"></i>}
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            );
+        }
+
+        const currentQ = questions[currentIndex];
+        const hasAnsweredCurrent = !!answers[currentIndex];
+        
+        return (
+            <div className="space-y-4">
+                {questions.length > 0 && (
+                    <div className="bg-white dark:bg-slate-800 rounded-[1.5rem] shadow-sm border border-slate-200 dark:border-slate-700 p-6 md:p-8 relative overflow-hidden">
+                        <div className="flex justify-between items-center mb-6">
+                            <div className="flex items-center gap-2">
+                                <span className="bg-teal-600 dark:bg-teal-700 text-white px-4 py-1.5 rounded-lg text-xs font-black uppercase tracking-widest shadow-sm">Câu {currentQ ? currentQ.id : ''}</span>
+                                <span className="text-slate-400 font-bold text-xs tracking-widest uppercase">/ {questions.length}</span>
+                            </div>
+                            <button onClick={toggleFlag} className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold border ${flagged.has(currentIndex) ? 'bg-orange-50 dark:bg-orange-900/40 border-orange-400 text-orange-600 dark:text-orange-400' : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-600 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300'}`}>
+                                <i className="fa-solid fa-flag text-sm"></i>
+                                <span className="hidden sm:inline">Đánh dấu</span>
+                            </button>
+                        </div>
+                        <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 leading-snug mb-6 whitespace-pre-wrap">{currentQ ? currentQ.question : ''}</h3>
+                        <div className="grid gap-3">
+                            {['A', 'B', 'C', 'D', 'E'].map(key => {
+                                const label = currentQ ? currentQ.options[key] : null;
+                                if (!label) return null;
+                                
+                                const isSelected = answers[currentIndex] === key;
+                                const isCorrect = currentQ.answer === key;
+                                const showAnswerState = hasAnsweredCurrent;
+                                
+                                let btnClass = "group w-full p-4 rounded-xl border-2 text-left flex items-center gap-4 option-transition relative border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 hover:border-teal-300 dark:hover:border-teal-600 hover:bg-teal-50/50 dark:hover:bg-teal-900/20";
+                                let spanClass = "w-8 h-8 rounded-lg flex items-center justify-center font-bold text-base shrink-0 transition-all bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-2 border-slate-200 dark:border-slate-600 group-hover:bg-teal-600 dark:group-hover:bg-teal-700 group-hover:text-white group-hover:border-teal-600 dark:group-hover:border-teal-700";
+                                
+                                if (showAnswerState) {
+                                    if (isCorrect) {
+                                        btnClass = "group w-full p-4 rounded-xl border-2 text-left flex items-center gap-4 option-transition relative bg-green-50 dark:bg-green-900/30 border-green-500 dark:border-green-600 text-green-800 dark:text-green-200 shadow-sm";
+                                        spanClass = "w-8 h-8 rounded-lg flex items-center justify-center font-bold text-base shrink-0 transition-all bg-green-500 dark:bg-green-600 text-white border-green-500 dark:border-green-600";
+                                    } else if (isSelected) {
+                                        btnClass = "group w-full p-4 rounded-xl border-2 text-left flex items-center gap-4 option-transition relative bg-red-50 dark:bg-red-900/30 border-red-500 dark:border-red-600 text-red-800 dark:text-red-200 shadow-sm";
+                                        spanClass = "w-8 h-8 rounded-lg flex items-center justify-center font-bold text-base shrink-0 transition-all bg-red-500 dark:bg-red-600 text-white border-red-500 dark:border-red-600";
+                                    } else {
+                                        btnClass = "group w-full p-4 rounded-xl border-2 text-left flex items-center gap-4 option-transition relative border-slate-200 dark:border-slate-700 bg-teal-50 dark:bg-slate-800 text-slate-500 dark:text-slate-500 opacity-50 grayscale";
+                                        spanClass = "w-8 h-8 rounded-lg flex items-center justify-center font-bold text-base shrink-0 transition-all bg-slate-200 dark:bg-slate-700 text-slate-400 dark:text-slate-500 border-slate-200 dark:border-slate-700";
+                                    }
+                                }
+                                
+                                return (
+                                    <button key={key} onClick={() => handleSelectAnswer(key)} disabled={showAnswerState} className={btnClass}>
+                                        <span className={spanClass}>{key}</span>
+                                        <span className="text-base font-medium leading-normal flex-1 pr-8 whitespace-pre-wrap dark:text-slate-300">{label}</span>
+                                        {showAnswerState && isCorrect && <i className="fa-solid fa-circle-check text-2xl text-green-500 dark:text-green-400 absolute right-4 top-1/2 -translate-y-1/2"></i>}
+                                        {showAnswerState && isSelected && !isCorrect && <i className="fa-solid fa-circle-xmark text-2xl text-red-500 dark:text-red-400 absolute right-4 top-1/2 -translate-y-1/2"></i>}
+                                    </button>
+                                );
+                            })}
+                        </div>
+                    </div>
+                )}
+
+                {questions.length > 0 && (
+                    <div className="flex items-center justify-between gap-4 pt-4 pb-20 md:pb-4">
+                        <button onClick={() => setCurrentIndex(p => Math.max(0, p - 1))} disabled={currentIndex === 0} className="flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-6 py-3.5 rounded-xl font-bold text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 disabled:opacity-0 transition-all flex items-center justify-center gap-2 uppercase tracking-wide text-xs">
+                            <i className="fa-solid fa-chevron-left text-sm"></i> 
+                            <span className="hidden sm:inline">Câu trước</span>
+                        </button>
+                        <button onClick={() => setCurrentIndex(p => Math.min(questions.length - 1, p + 1))} disabled={currentIndex === questions.length - 1} className="flex-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-6 py-3.5 rounded-xl font-bold text-slate-800 dark:text-slate-200 hover:bg-teal-50 dark:hover:bg-slate-700 transition-all shadow-sm flex items-center justify-center gap-2 uppercase tracking-wide text-xs">
+                            <span className="hidden sm:inline">Câu tiếp</span> 
+                            <i className="fa-solid fa-chevron-right text-sm"></i>
+                        </button>
+                    </div>
+                )}
+            </div>
+        );
+    };
+
+    if (appState === 'intro') {
+        return (
+            <div className="min-h-screen bg-teal-50 dark:bg-slate-900 flex flex-col items-center justify-center p-4">
+                <div className="absolute top-4 right-4 z-50 flex gap-2">
+                    <button onClick={() => setIsSoundEnabled(!isSoundEnabled)} className="p-3 bg-white dark:bg-slate-800 shadow-md rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors text-slate-600 dark:text-slate-300">
+                        {isSoundEnabled ? <i className="fa-solid fa-volume-high text-xl text-teal-500"></i> : <i className="fa-solid fa-volume-xmark text-xl text-slate-400"></i>}
+                    </button>
+                    <button onClick={() => setIsDarkMode(!isDarkMode)} className="p-3 bg-white dark:bg-slate-800 shadow-md rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors text-slate-600 dark:text-slate-300">
+                        {isDarkMode ? <i className="fa-solid fa-sun text-xl text-amber-500"></i> : <i className="fa-solid fa-moon text-xl text-teal-500"></i>}
+                    </button>
+                </div>
+                <div className="max-w-2xl w-full bg-white dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden border border-slate-100 dark:border-slate-700">
+                    <div className="bg-teal-600 p-10 flex flex-col items-center text-white text-center">
+                        <div className="bg-white/20 p-6 rounded-full mb-5 shadow-inner">
+                            <i className="fa-solid fa-microscope text-5xl text-white"></i>
+                        </div>
+                        <h1 className="text-3xl md:text-4xl font-extrabold uppercase tracking-tight mb-2">HÓA SINH LÂM SÀNG</h1>
+                        <p className="text-teal-100 text-lg font-medium opacity-90 tracking-wide">CHUYÊN ĐỀ: XN ĐÁNH GIÁ TÌNH TRẠNG VIÊM</p>
+                    </div>
+                    <div className="p-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div className="flex items-center gap-4 bg-teal-50 dark:bg-slate-700/50 p-5 rounded-2xl border border-slate-200 dark:border-slate-600 shadow-sm">
+                                <div className="bg-teal-100 dark:bg-teal-900/50 p-3 rounded-xl text-teal-600 dark:text-teal-400"><i className="fa-solid fa-list-check text-2xl"></i></div>
+                                <div><p className="text-xs text-slate-500 dark:text-slate-400 font-bold uppercase">Tổng câu hỏi</p><p className="text-2xl font-black text-slate-800 dark:text-slate-100">{questions.length}</p></div>
+                            </div>
+                            <div className="flex items-center gap-4 bg-teal-50 dark:bg-slate-700/50 p-5 rounded-2xl border border-slate-200 dark:border-slate-600 shadow-sm">
+                                <div className="bg-orange-100 dark:bg-orange-900/50 p-3 rounded-xl text-orange-600 dark:text-orange-400"><i className="fa-regular fa-clock text-2xl"></i></div>
+                                <div><p className="text-xs text-slate-500 dark:text-slate-400 font-bold uppercase">Thời gian</p><p className="text-2xl font-black text-slate-800 dark:text-slate-100">{questions.length} Phút</p></div>
+                            </div>
+                        </div>
+                        <div className="bg-teal-50 dark:bg-teal-900/30 rounded-2xl p-6 mb-10 border border-teal-200 dark:border-teal-800/50 flex items-start gap-4 text-teal-800 dark:text-teal-300">
+                            <i className="fa-solid fa-circle-exclamation shrink-0 mt-1 text-xl"></i>
+                            <div className="text-sm leading-relaxed">
+                                <p className="font-bold mb-1">Hướng dẫn làm bài:</p>
+                                <ul className="list-disc pl-5 space-y-1">
+                                    <li>Kết quả đúng/sai sẽ hiển thị <strong className="text-teal-900 dark:text-teal-400">ngay lập tức</strong> khi chọn.</li>
+                                    <li>Khi đã chọn, bạn <strong className="text-teal-900 dark:text-teal-400">không thể thay đổi</strong> đáp án của câu đó.</li>
+                                    <li>Sử dụng nút <strong className="text-teal-900 dark:text-teal-400">Đánh dấu cờ</strong> để lưu lại những câu khó.</li>
+                                    <li>Được biên soạn bởi <strong className="text-teal-900 dark:text-teal-400">TEAMDRCAT</strong> dựa trên kiến thức Y Hà Nội.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button onClick={startQuiz} className="w-full bg-teal-600 hover:bg-teal-700 dark:bg-teal-700 dark:hover:bg-teal-600 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-lg hover:shadow-teal-600/40 flex items-center justify-center gap-3 uppercase tracking-wide">
+                            <i className="fa-solid fa-play text-xl"></i> Bắt đầu làm bài
+                        </button>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    return (
+        <div className="min-h-screen bg-teal-50 dark:bg-slate-900 flex flex-col md:flex-row">
+            {showMatrix && <div className="fixed inset-0 bg-slate-900/60 z-20 md:hidden backdrop-blur-sm" onClick={() => setShowMatrix(false)}></div>}
+            
+            <aside className={`fixed md:sticky top-0 right-0 h-screen w-[360px] md:w-[450px] bg-white dark:bg-slate-800 border-l border-slate-200 dark:border-slate-700 z-30 flex flex-col transition-transform duration-300 ${showMatrix ? 'translate-x-0' : 'translate-x-full md:translate-x-0'} md:order-2 shadow-2xl md:shadow-none`}>
+                <div className="p-6 border-b border-slate-200 dark:border-slate-700 flex justify-between items-center bg-white dark:bg-slate-800 sticky top-0">
+                    <h2 className="font-black text-slate-800 dark:text-slate-100 flex items-center gap-2 uppercase tracking-tighter text-lg"><i className="fa-solid fa-book-open text-xl text-teal-600 dark:text-teal-500"></i> Danh sách câu hỏi</h2>
+                    <button className="md:hidden text-slate-400 p-2 bg-slate-100 dark:bg-slate-700 rounded-full hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors" onClick={() => setShowMatrix(false)}><i className="fa-solid fa-xmark text-xl"></i></button>
+                </div>
+                <div className="flex-1 overflow-y-auto p-6 custom-scrollbar grid grid-cols-6 gap-3 content-start">
+                    {questions.map((q, i) => {
+                        let navBtnClass = "h-12 w-full rounded-xl text-sm font-extrabold border-2 transition-all relative flex items-center justify-center hover:brightness-95 bg-teal-50 dark:bg-slate-700 text-slate-400 border-slate-200 dark:border-slate-600 dark:text-slate-300";
+                        if (!!answers[i]) {
+                            if (answers[i] === q.answer) {
+                                navBtnClass = "h-12 w-full rounded-xl text-sm font-extrabold border-2 transition-all relative flex items-center justify-center hover:brightness-95 bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 border-green-300 dark:border-green-700";
+                            } else {
+                                navBtnClass = "h-12 w-full rounded-xl text-sm font-extrabold border-2 transition-all relative flex items-center justify-center hover:brightness-95 bg-red-100 dark:bg-red-900/50 text-red-700 dark:text-red-300 border-red-300 dark:border-red-700";
+                            }
+                        }
+                        if (currentIndex === i && appState !== 'review') {
+                            navBtnClass += " ring-2 ring-teal-500 ring-offset-2 dark:ring-offset-slate-800";
+                        }
+                        if (flagged.has(i)) {
+                            navBtnClass += " !border-orange-400 dark:!border-orange-500 !bg-orange-50 dark:!bg-orange-900/30 text-orange-600 dark:text-orange-400";
+                        }
+                        return (
+                            <button 
+                                key={i} 
+                                onClick={() => { 
+                                    if (appState === 'review') { 
+                                        const target = document.getElementById(`review-q-${i}`); 
+                                        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' }); 
+                                    } else { 
+                                        setCurrentIndex(i); 
+                                    } 
+                                    if (window.innerWidth < 768) setShowMatrix(false); 
+                                }} 
+                                className={navBtnClass}
+                            >
+                                {i + 1}
+                                {flagged.has(i) && <div className="absolute -top-1.5 -right-1.5 w-3.5 h-3.5 bg-orange-500 rounded-full border-2 border-white dark:border-slate-800 shadow-sm"></div>}
+                            </button>
+                        );
+                    })}
+                </div>
+                <div className="p-6 border-t border-slate-200 dark:border-slate-700 bg-teal-50 dark:bg-slate-800/50">
+                    {appState === 'quiz' ? (
+                        <button onClick={() => setAppState('result')} className="w-full bg-teal-700 dark:bg-teal-600 text-white font-bold py-4 rounded-xl shadow-lg flex items-center justify-center gap-2 uppercase tracking-wider hover:bg-teal-800 dark:hover:bg-teal-700 transition-colors"><i className="fa-solid fa-paper-plane text-lg"></i> Nộp bài</button>
+                    ) : (
+                        <button onClick={restartQuiz} className="w-full bg-teal-600 dark:bg-teal-700 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-teal-700 dark:hover:bg-teal-600 transition-colors"><i className="fa-solid fa-rotate-right text-lg"></i> Làm lại từ đầu</button>
+                    )}
+                </div>
+            </aside>
+
+            <main className="flex-1 flex flex-col h-screen md:order-1 overflow-hidden">
+                <header className="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 px-6 py-4 flex items-center justify-between sticky top-0 z-10 shadow-sm">
+                    <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-teal-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-teal-200 dark:shadow-none"><i className="fa-solid fa-microscope text-2xl"></i></div>
+                        <div className="hidden sm:block"><h1 className="text-sm font-black text-slate-800 dark:text-slate-100 uppercase tracking-tight">HSLS TÌNH TRẠNG VIÊM</h1><p className="text-[11px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-widest">Tài liệu bởi TeamDrCat</p></div>
+                    </div>
+                    <div className="flex items-center gap-2 sm:gap-4">
+                        <button onClick={() => setIsSoundEnabled(!isSoundEnabled)} className="p-3 bg-slate-100 dark:bg-slate-700 rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors text-slate-600 dark:text-slate-300">
+                            {isSoundEnabled ? <i className="fa-solid fa-volume-high text-xl text-teal-500"></i> : <i className="fa-solid fa-volume-xmark text-xl text-slate-400"></i>}
+                        </button>
+                        <button onClick={() => setIsDarkMode(!isDarkMode)} className="p-3 bg-slate-100 dark:bg-slate-700 rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors text-slate-600 dark:text-slate-300">
+                            {isDarkMode ? <i className="fa-solid fa-sun text-xl text-amber-500"></i> : <i className="fa-solid fa-moon text-xl text-teal-500"></i>}
+                        </button>
+                        {appState === 'quiz' && (
+                            <React.Fragment>
+                                <div className={`px-5 py-2.5 rounded-2xl font-mono text-xl font-black border-2 flex items-center gap-2 ${timeRemaining < 300 ? 'bg-red-50 dark:bg-red-900/30 border-red-200 dark:border-red-800 text-red-600 dark:text-red-400 animate-pulse' : 'bg-teal-50 dark:bg-slate-700 border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200'}`}>
+                                    <i className="fa-regular fa-clock text-xl"></i> {formatTime(timeRemaining)}
+                                </div>
+                                <button onClick={togglePause} className="p-3 bg-slate-100 dark:bg-slate-700 rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors text-teal-600 dark:text-teal-400">
+                                    {isPaused ? <i className="fa-solid fa-play text-xl"></i> : <i className="fa-solid fa-pause text-xl"></i>}
+                                </button>
+                            </React.Fragment>
+                        )}
+                        {appState === 'review' && <div className="px-5 py-2.5 rounded-2xl font-bold bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-400 flex items-center gap-2"><i className="fa-solid fa-eye text-lg"></i> <span className="hidden sm:inline">Chế độ xem lại</span></div>}
+                        <button className="md:hidden bg-slate-100 dark:bg-slate-700 text-teal-600 dark:text-teal-400 px-4 py-3 font-bold rounded-2xl flex items-center gap-2" onClick={() => setShowMatrix(true)}><i className="fa-solid fa-bars text-lg"></i></button>
+                    </div>
+                </header>
+
+                <div ref={scrollContainerRef} className="flex-1 overflow-y-auto p-4 md:p-8 custom-scrollbar">
+                    <div className="max-w-4xl mx-auto w-full pb-8">
+                        {renderQuizContent()}
+                    </div>
+                </div>
+            </main>
+        </div>
+    );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+</script>
+</body>
+</html>
